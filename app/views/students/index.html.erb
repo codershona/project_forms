@@ -1,0 +1,14 @@
+<%= link_to "Create new infromation", new_student_path %><br/><hr><hr>
+
+
+<% @student.each do |student| %>
+ Firstname: <%= student.firstname %><br/><br/>
+  Lastname: <%= student.lastname %><br/><br/>
+  Gender: <%= student.gender %><br/><br/>
+  Address: <%= student.address%><br/><br/>
+  Country: <%= student.country %><br/><br/>
+
+  <%= link_to "Delete information", new_student_path(student), :data=>{:confirm=>"Are you sure?"}, :method=> :delete%>
+  <br/><hr><hr>
+
+  <% end %>

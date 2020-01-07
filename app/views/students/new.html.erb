@@ -1,0 +1,20 @@
+Enter new student college admission information: 
+<hr><hr>
+<%= render :partial => "student" %>
+<h3> Fill the Admission Form </h3>
+<%= form_for @student do |f| %>
+    Firstname: <%= f.text_field :firstname %><br/><br/>
+    Lastname: <%= f.text_field :lastname %><br/><br/><br/>
+    <%= f.submit "Create Student" %>
+  <% end %>
+
+  <hr>
+  Display all students' information
+  <% if !@students.blank? %>
+    <% for item in @students %>
+      <%= item.firtsname %> <%= item.lastname %><br/>
+      <% end %>
+    <% else %>
+
+ <% end %>
+
