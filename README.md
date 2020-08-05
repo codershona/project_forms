@@ -3,8 +3,6 @@
 ## Project: FORMS
 ## Student-Form App.
 
-## Builded by Falguni Islam(Software Developer)
-
 
  Run rails s
 
